@@ -42,7 +42,7 @@ const Contact = () => {
     }
   }
   return (
-    <div className='w-[70%] mx-auto my-[4rem] text-[#444] dark:text-[#ccc] flex flex-col items-center gap-2'>
+    <div className='w-[90%] md:w-[70%] mx-auto my-[4rem] text-[#444] dark:text-[#ccc] flex flex-col items-center gap-2'>
       <h2 className='text-center text-lg font-bold'>CONTACT</h2>
       <p>Feel free to pop me a message if you want to know more about me or my projects.</p>
       <form action="https://formspree.io/f/xrgongwz" method="POST" onSubmit={handleSubmit} className='flex flex-col gap-2 w-full md:w-1/2 mx-auto'>
