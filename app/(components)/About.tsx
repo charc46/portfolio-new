@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className='text-[#444] dark:text-[#ccc] w-[95%] md:w-[70%] mx-auto my-12 flex flex-col gap-2'>
       <div className='flex flex-col lg:flex-row gap-5'>
-        <Image src={headshot} alt='Headshot' width={400} height={400} className='rounded shadow-lg mx-auto md:mx-none max-h-[400px]' placeholder='blur'/>
+        <Image src={headshot} alt='Headshot' width={300} height={300} className='rounded shadow-lg mx-auto md:mx-none max-h-[300px]' placeholder='blur'/>
         <div className='flex flex-col gap-2'>
           <h2 className='font-bold text-lg mb-2'>A LITTLE ABOUT ME</h2>
           <p>I&apos;m Charlie, a self-taught front-end developer based in London with a passion for creating internet things. I continue to develop my skills through self-guided learning after attending a coding bootcamp at the end of 2020, as well as thinking up and building hands-on projects to solidify my learning.</p>

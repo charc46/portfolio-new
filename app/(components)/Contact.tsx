@@ -48,15 +48,15 @@ const Contact = () => {
       <form action="https://formspree.io/f/xrgongwz" method="POST" onSubmit={handleSubmit} className='flex flex-col gap-2 w-full md:w-1/2 mx-auto'>
         <div className='flex flex-col gap-1'>
           <label htmlFor="name" className='font-bold text-xs'>NAME</label>
-          <input className='rounded-lg px-2 py-1' type="text" name='name' value={name} onChange={e => setName(e.target.value)}/>
+          <input className='rounded-lg px-2 py-1' type="text" name='name' value={name} required onChange={e => setName(e.target.value)}/>
         </div>
         <div className='flex flex-col gap-1'>
           <label htmlFor="email" className='font-bold text-xs'>EMAIL</label>
-          <input className='rounded-lg px-2 py-1' type="email" id='email' name='_replyto' value={email} onChange={e => setEmail(e.target.value)}/>
+          <input className='rounded-lg px-2 py-1' type="email" id='email' name='_replyto' value={email} required onChange={e => setEmail(e.target.value)}/>
         </div>
         <div className='flex flex-col gap-1'>
           <label htmlFor="message" className='font-bold text-xs'>MESSAGE</label>
-          <textarea className='rounded-lg px-2 py-1 resize-none' name="message" id="message" rows={8} value={message} onChange={e => setMessage(e.target.value)}></textarea>
+          <textarea className='rounded-lg px-2 py-1 resize-none' name="message" id="message" rows={8} value={message} required onChange={e => setMessage(e.target.value)}></textarea>
         </div>
         <button className='font-bold text-sm p-2 rounded-full bg-[#444] dark:bg-[#ccc] text-[#eee] dark:text-[#444] w-1/4 mx-auto hover:-translate-x-[1px] hover:-translate-y-[1px] hover:shadow-lg duration-200 my-2'>SEND IT</button>
         <p className='font-bold text-sm text-center'>{status}</p>
